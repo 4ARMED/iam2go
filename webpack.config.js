@@ -5,7 +5,7 @@ const Dotenv = require("dotenv-webpack");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "../embed/ui"),
+    path: path.join(__dirname, "/build"),
     filename: "app.js",
   },
   devServer: {
