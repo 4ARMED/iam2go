@@ -46,7 +46,7 @@ const ConverterForm = () => {
     }
 
     return (
-        <div className="border border-gray-100 h-screen">
+        <div className="border border-gray-100 h-full">
             <div className="flex min-h-full">
                 <div className="w-1/2 border-r p-1 place-items-start min-h-fit">
                     {error && <p class="text-xs text-red-500">{error}</p>}
@@ -62,8 +62,8 @@ const ConverterForm = () => {
                         </form>
                     </FormProvider>
                 </div>
-                <div className="flex flex-col w-1/2 relative h-screen">
-                    <div className="flex border-b border-gray-100 p-10 min-h-fit">
+                <div className="flex flex-col w-1/2 relative h-full">
+                    <div className="flex flex-row border-b border-gray-100 p-10">
                         <textarea id="cli-profile" defaultValue={cliProfile} className="block h-full w-full p-5 text-xs text-[#404040] font-mono outline-none resize-none" />
                         {cliProfile && 
                         <svg onClick={copyCliProfile} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-#[404040] active:text-primary-500">
@@ -71,7 +71,7 @@ const ConverterForm = () => {
                         </svg>
                         }
                     </div>
-                    <div className="flex pt-10 pl-10 pr-10">
+                    <div className="flex flex-row pt-10 pl-10 pr-10">
                         <textarea id="shell-env" defaultValue={shellEnv} className="block h-full w-full p-5 text-xs text-[#404040] font-mono outline-none resize-none" />
                         {shellEnv && 
                         <svg onClick={copyShellEnv} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 text-#[404040] active:text-primary-500">
