@@ -8,7 +8,7 @@ const App = () => {
     const [iamcreds, setIamcreds] = useState({})
 
     return (
-        <div className="flex flex-col h-full items-center p-20">
+        <div className="flex flex-col h-screen items-center p-20">
             <Logo />
             <div className="text-center p-10 ">
                 <h1 className="text-2xl text-[#404040] pb-10">IAM 2 Go</h1>
