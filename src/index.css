@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Logo */
+.st0{
+    fill: #404040;
+}
+.st1{fill:url(#SVGID_2_);}
+.st2{clip-path:url(#SVGID_4_);fill:url(#SVGID_6_);}
+.st3{fill:url(#SVGID_7_);}
+.st4{clip-path:url(#SVGID_9_);fill:url(#SVGID_10_);}
+.st5{clip-path:url(#SVGID_12_);fill:url(#SVGID_13_);}
+.st6{clip-path:url(#SVGID_15_);fill:url(#SVGID_16_);}
